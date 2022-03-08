@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create free account | Group 2 Tourism App</title>
+        <link  href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="form_body">
+            <div class="notices">{{msg}}</div>
+            <div class="reg_form">
+                <h2>Create free account!</h2>
+                <form action="{{url_for('register')}}" method="POST" autocomplete="off">
+                    <input type="text" name="username" placeholder="Username"/>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="text" name="firstName" placeholder="First Name"/>
+                    <input type="text" name="lastName" placeholder="Last Name"/>
+                    <input type="password" name="pwd" placeholder="Password"/>
+                    <input type="password" name="ver_pwd" placeholder="Retype Password"/>
+                    <label for="gender">Gender: </label>
+                        <input name="gender" type="radio" value="male"/> Male       
+                        <input name="gender" type="radio" value="female"/> Female</br>
+                    <label for="country">Country: </label>
+                        <select name="country" id="country">
+                        <option value="">select country</option>
+                        <option value="ussr">Russia</option>
+                        <option value="ukr">Ukraine</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="gh">Ghana</option>
+                        <option value="za">South Africa</option>
+                        <option value="us">USA</option>
+                        <option value="sar">Saudi Arabia</option>
+                        <option value="egy">Egypt</option>
+                        <option value="egy">more coming</option>
+                    </select> <br>
+                    <input type="checkbox" name="tc"/> Accept our <a href="/terms_and_conditions.html">Terms and Conditions</a>
+                    <button>Create Account</button>
+                </form>
+                <p>Already have an account? <a href="{{url_for('login')}}">Login here</a>
+            </div>
+        </div>
+    </body>
+</html>

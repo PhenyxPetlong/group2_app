@@ -1,0 +1,180 @@
+<!-- DOCTYPE html> -->
+<html>
+<head>
+        <title>EVERYTHING PLATEAU</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+        <script src="{{url_for('static', filename='sliderengine/jquery.js')}}"></script>
+        <script src="{{url_for('static', filename='sliderengine/amazingslider.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='sliderengine/amazingslider-1.css')}}">
+        <script src="{{url_for('static', filename='sliderengine/initslider-1.js')}}"></script>
+</head>
+<body>
+        <div class="navbar">
+                <div class="logo">
+                        <h1>
+                                <a href="">
+                                        <img id="logo" src="{{url_for('static', filename='images/logo90x90.png')}}" alt="Group 2 Tourism App Logo"/>
+                                </a>
+                        </h1>
+                </div>
+                <div class="menu">
+                        <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Tourist Sites</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Restaurants</a></li>
+                                <li><a href="#">Taxi Services</a></li>
+                                <li><a href="#">Hike Bookings</a></li>
+                        </ul>
+                </div>
+                <div class="signup">
+                        <a href="{{url_for('register')}}">Sign Up</a>
+                </div>
+        </div>
+        <br>
+        <br>
+        <!-- This is for slider -->
+    <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 56px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="{{url_for('static', filename='images/slider-images/img2.jpeg')}}" alt="WELCOME TO PLATEAU!"  title="WELCOME TO PLATEAU!" />
+                </li>
+                <li><img src="{{url_for('static', filename='images/slider-images/img4.jpg')}}" alt="BEAUTIFUL SIGHTS"  title="BEAUTIFUL SIGHTS" />
+                </li>
+                <li><img src="{{url_for('static', filename='images/slider-images/img1.jpeg')}}" alt="AMAZING NATURAL FEATURES"  title="AMAZING NATURAL FEATURES" />
+                </li>
+                <li><img src="{{url_for('static', filename='images/slider-images/img3.jpeg')}}" alt="WILDLIFE AND ANIMAL CONSERVATION"  title="WILDLIFE AND ANIMAL CONSERVATION" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="{{url_for('static', filename='images/slider-images/thumbs/img2-tn.jpeg')}}" alt="WELCOME TO PLATEAU!" title="WELCOME TO PLATEAU!" /></li>
+                <li><img src="{{url_for('static', filename='images/slider-images/thumbs/img4-tn.jpg')}}" alt="BEAUTIFUL SIGHTS" title="BEAUTIFUL SIGHTS" /></li>
+                <li><img src="{{url_for('static', filename='images/slider-images/thumbs/img1-tn.jpeg')}}" alt="AMAZING NATURAL FEATURES" title="AMAZING NATURAL FEATURES" /></li>
+                <li><img src="{{url_for('static', filename='images/slider-images/thumbs/img3-tn.jpeg')}}" alt="WILDLIFE AND ANIMAL CONSERVATION" title="WILDLIFE AND ANIMAL CONSERVATION" /></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of Slider HTML -->
+        <div class="body">
+                        <div class="heading">
+                                <h1>Explore With Us</h1>
+                        </div>
+                        <br><br>
+                        <p>Welcome to Plateau State! The home of peace and tourism. </p>
+                        <br>
+                        <br>
+                        <a href="#">Learn More</a>
+               
+                <div class="tours">
+                        <div class="places">
+                                <div class="placeTitle">
+                                        <h2>Gallery</h2>
+                                </div>
+                                <img src="{{url_for('static', filename='images/img1.jpeg')}}" style="width: 300px; height: 250px; border-radius: 12px;">
+                                <br>
+                                <br>
+                                <a href="#">Gallery</a>
+                        </div>
+                        <div class="places">
+                                <div class="placeTitle">
+                                        <h2>Current News</h2>
+                                </div>
+                                <img src="{{url_for('static', filename='images/img2.jpeg')}}" style="width: 300px; height: 250px; border-radius: 12px;">
+                                <br>
+                                <br>
+                                <a href="#">Current News</a>
+                        </div>
+                        <div class="places">
+                                <div class="placeTitle">
+                                        <h2>History</h2>
+                                </div>
+                                <img src="{{url_for('static', filename='images/img3.jpeg')}}" style="width: 300px; height: 250px; border-radius: 12px;">
+                                <br>
+                                <br>
+                                <a href="#">History</a>
+                        </div>
+                </div>
+        </div>
+        <div class="section" id="blog">
+                <div class="section-heading">
+                        <h1>BLOG POST</h1>
+                </div>
+                <div class="post-layout">
+                        <div class="blog-entry">
+                                <img src="{{url_for('static', filename='images/img1.jpeg')}}" style="width: 200px; height: 150px; border-radius: 12px;">
+                                <div class="post-title">
+                                        <h2><a href="">Top 5 restaurants to visit in Jos</a></h2>
+                                </div>
+                                <div class="post-properties">
+                                        Category: <a href="">Restaurants</a> | Posted on: 3rd March, 2020 | Author: <a href="">Group 2</a> 
+                                </div>
+                                <p>Welcome to Plateau State! The home of peace and tourism. <a href="#">Read more...</a>
+                                </p>
+                        </div>
+               
+                        <div class="blog-entry">
+                                <img src="{{url_for('static', filename='images/img2.jpeg')}}" style="width: 200px; height: 150px; border-radius: 12px;">
+                                <div class="post-title">
+                                        <h2><a href="">Top 5 restaurants to visit in Jos</a></h2>
+                                </div>
+                                <div class="post-properties">
+                                        Category: <a href="">Restaurants</a> | Posted on: 3rd March, 2020 | Author: <a href="">Group 2</a> 
+                                </div>
+                                <p>Welcome to Plateau State! The home of peace and tourism. <a href="#">Read more...</a>
+                                </p>
+                        </div>
+
+                        <div class="blog-entry">
+                                <img src="{{url_for('static', filename='images/img1.jpeg')}}" style="width: 200px; height: 150px; border-radius: 12px;">
+                                <div class="post-title">
+                                        <h2><a href="">Top 5 restaurants to visit in Jos</a></h2>
+                                </div>
+                                <div class="post-properties">
+                                        Category: <a href="">Restaurants</a> | Posted on: 3rd March, 2020 | Author: <a href="">Group 2</a> 
+                                </div>
+                                <p>Welcome to Plateau State! The home of peace and tourism. <a href="#">Read more...</a>
+                                </p>
+                        </div>
+               
+                        <div class="blog-entry">
+                                <img src="{{url_for('static', filename='images/img2.jpeg')}}" style="width: 200px; height: 150px; border-radius: 12px;">
+                                <div class="post-title">
+                                        <h2><a href="">Top 5 restaurants to visit in Jos</a></h2>
+                                </div>
+                                <div class="post-properties">
+                                        Category: <a href="">Restaurants</a> | Posted on: 3rd March, 2020 | Author: <a href="">Group 2</a> 
+                                </div>
+                                <p>Welcome to Plateau State! The home of peace and tourism. <a href="#">Read more...</a>
+                                </p>
+                        </div>
+
+                        <div class="blog-entry">
+                                <img src="{{url_for('static', filename='images/img2.jpeg')}}" style="width: 200px; height: 150px; border-radius: 12px;">
+                                <div class="post-title">
+                                        <h2><a href="">Top 5 restaurants to visit in Jos</a></h2>
+                                </div>
+                                <div class="post-properties">
+                                        Category: <a href="">Restaurants</a> | Posted on: 3rd March, 2020 | Author: <a href="">Group 2</a> 
+                                </div>
+                                <p>Welcome to Plateau State! The home of peace and tourism. <a href="#">Read more...</a>
+                                </p>
+                        </div>
+                </div>
+                
+        </div>
+
+        <div class="section" id="blog">
+                This is an empty section for now. Planning to add a list of Upcoming Hike/Carnival/Cultural Events
+        </div>
+
+        <div class="footer">
+                <a href="#">Copyright</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Complaints</a>
+        </div>
+</body>
+</html>

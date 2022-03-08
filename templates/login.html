@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login | Group 2 Tourism App</title>
+        <link  href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="form_body">
+            <div class="notices">{{msg}}</div>
+            <div class="reg_form">
+                <h2>Welcome, Login Below</h2>
+                <form action="{{url_for('login')}}" method="POST" autocomplete="off">
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="password" name="pwd" placeholder="Password"/>
+                    <input type="checkbox" name="remember"/> Remember Me</a>
+                    <button>Login</button>
+                </form>
+                <p>Forgot Password? <a href="#">Recover Now</a>
+                </p>
+                <p>Dont have an account? <a href="{{url_for('register')}}">Create a free account</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
